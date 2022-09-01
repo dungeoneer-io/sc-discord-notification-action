@@ -1,0 +1,14 @@
+name: 'Small Council Discord Notification'
+description: 'Internal Dio Event Logger'
+inputs:
+  who:
+    description: 'Persona reporting this message'
+    required: true
+    default: 'Lerianu'
+  message:
+    description: 'What the message is'
+    required: true
+    default: 'I forgot what I was going to say'
+runs:
+  using: 'node16'
+  main: 'index.js'
