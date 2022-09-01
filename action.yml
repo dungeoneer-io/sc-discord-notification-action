@@ -1,6 +1,9 @@
 name: 'Small Council Discord Notification'
 description: 'Internal Dio Event Logger'
 inputs:
+  webhook:
+    description: 'Discord Webhook'
+    required: true
   message:
     description: 'What the message is'
     required: true

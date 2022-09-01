@@ -6,7 +6,7 @@ async function doAction() {
   try {
     const message = core.getInput('message');
 
-    const url = secrets.DISCORD_NOTIFICATION_WEBHOOK;
+    const url = core.getInput('webhook');
     await axios({ url, method: 'POST', data: message });
 
   } catch (error) {
