@@ -7,10 +7,11 @@ async function doAction() {
     const message = core.getInput('message');
 
     const url = core.getInput('webhook');
-    await axios({ url, method: 'POST', data: message });
+    await axios({ url, method: 'POST', data: { content: message } });
 
   } catch (error) {
     core.setFailed(error.message);
+
   }
 }
 
